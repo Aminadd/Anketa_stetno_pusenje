@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<br>
+<h1> Popunjena anketa </h1>
+<br>
+<hr>
+<form action="odgovori.php" method="GET">
+<table>
+<th>ID</th> <th>Ime i prezime</th> <th>Odgovor 1</th>
+<th>Odgovor 2</th> <th>Odgovor 3</th> <th>Odgovor 4</th> <th>Odgovor 5</th> <th>Odgovor 6</th> <th>Odgovor 7</th> <th>Odgovor 8</th>
+<th>Odgovor 9</th> <th>Odgovor 10</th> <th>Odgovor 11</th> <th>Odgovor 12</th> <th>Odgovor 13</th> <th>Odgovor 14</th> <th>Brisanje</th>
+</tr>
+<?php foreach($anketa as $anketa) { ?>
+<tr>
+<td> <?php echo $anketa['id'] ?> </td>
+<td> <?php echo $anketa['Ime i prezime']; ?> </td>
+<td> <?php echo $anketa['odgovor1']; ?> </td>
+<td> <?php echo $anketa['odgovor2']; ?> </td>
+<td> <?php echo $anketa['odgovor3']; ?> </td>
+<td> <?php echo $anketa['odgovor4']; ?> </td>
+<td> <?php echo $anketa['odgovor5']; ?> </td>
+<td> <?php echo $anketa['odgovor6']; ?> </td>
+<td> <?php echo $anketa['odgovor7']; ?> </td>
+<td> <?php echo $anketa['odgovor8']; ?> </td>
+<td> <?php echo $anketa['odgovor9']; ?> </td>
+<td> <?php echo $anketa['odgovor10']; ?> </td>
+<td> <?php echo $anketa['odgovor11']; ?> </td>
+<td> <?php echo $anketa['odgovor12']; ?> </td>
+<td> <?php echo $anketa['odgovor13']; ?> </td>
+<td> <?php echo $anketa['odgovor14']; ?> </td>
+<td> <input type="checkbox" name="checkbox[]" value=<?php echo $anketa['id'] ?> </td>
+</tr>
+<?php } ?>
+</table>
+<br>
+<input type="submit" name="delete" value="Obrisi" class="dugme" />
+</form>
+</body>
+</html>

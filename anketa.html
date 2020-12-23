@@ -1,0 +1,371 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style> 
+body {
+  background-image: url('pp.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%
+ }
+</style>
+</head>
+<body>
+<button onclick="location.href='anketa.html';" style="margin-left: 2%; background-color:pink;">Anketa</button>
+<button onclick="location.href='login1.html';" style="margin-left: 2%; background-color:pink;">Odjavi se</button>
+<form action="odgovori.php" method="POST">
+<h3 style="text-align:center; font-size:50px;">Da li je pušenje štetno? </h3>
+
+<table style="margin-left:34%; font-size:20px;">
+	<tr>
+		<td><b>Da li ste pušač?</b></td>		
+	</tr>
+	
+	<tr>
+		<td>
+		 a)	<input type="radio" name="odgovor1" value="Da" checked> Da </br>
+		 b)	<input type="radio" name="odgovor1" value="Ne"> Ne </br>
+		 <br/>	
+		</td>	
+	</tr>
+	
+	<tr>
+		<td><b>Kada ste prvi put probali cigaretu?</b></td>	
+	</tr>
+	
+	<tr>
+		<td>
+		  a) <input type="radio" id="odg2"		  name="odgovor2" value="Osnovna">U osnovnoj skoli </br>
+		  b) <input type="radio" id="odg2"	name="odgovor2" value="Srednja">U srednjoj školi </br>
+		  c) <input type="radio" id="odg2"	name="odgovor2" value="Fakultet">Na fakultetu </br>
+		  d) <input type="radio" id="odg2"	name="odgovor2" value="Nisam">Nisam </br>
+		<br/>	
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Koliko godina imate?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		 a) <input type="radio" name="odgovor3" value="Manjeod"> Manje od 18</br>
+		 b) <input type="radio" name="odgovor3" value="Viseod"> Više od 18</br>
+		 <br/>		 
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Da li znate koliko je štetno pušenje za vas i vašu okolinu?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		a) <input type="checkbox" name="odgovor4" value="dp">Dovoljno sam upućen/a </br>
+		b) <input type="checkbox" name="odgovor4" value="neim">Ne interesuje me </br>
+		<br/>	
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Da li ste planirali da prestanete da pušite?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		a) <input type="radio" name="odgovor5" value="Daa"  checked> Da </br>
+		b) <input type="radio" name="odgovor5" value="Nee"> Ne </br>
+		c) <input type="radio" name="odgovor5" value="Nein"> Nisam ni poceo/la </br>
+		<br/>	
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Da li smatrate da pušenje predstavlja ozbiljan problem u našem društvu?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		a) <input type="radio" name="odgovor6" value="da"> Da, zato što sve veći broj maloletnika konzumira cigarete </br>
+		b) <input type="radio" name="odgovor6" value="ne"> Ne, u cigaretama nema ništa loše </br>
+		c) <input type="radio" name="odgovor6" value="nisam"> Nisam razmišljao/la o tome </br>
+		<br/>	
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Koliko potrošite kutija cigareta na dan?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		 a) <input type="radio" name="odgovor7" value="mj">Manje od jedne</br>
+		 b) <input type="radio" name="odgovor7" value="vj">Više od jedne</br>
+		 c) <input type="radio" name="odgovor7" value="nj">Nijednu</br>
+		 <br/>		 
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Da li ste pokušali da prekinete sa pušenjem cigareta?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		a) <input type="radio" name="odgovor8" value="uspeo"> Da, uspeo sam da prestanem da pušim cigarete</br>
+		b) <input type="radio" name="odgovor8" value="nikad"> Ne, jer nikada nisam pušio/la cigarete </br>
+		c) <input type="radio" name="odgovor8" value="nee"> Ne</br>
+		<br/>	
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Verujete li upozorenjima na paklici?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		 a) <input type="radio" name="odgovor9" value="yes">Da</br>
+		 b) <input type="radio" name="odgovor9" value="no">Ne</br>
+		 c) <input type="radio" name="odgovor9" value="not">Nisam siguran/a</br>
+		 <br/>		 
+		</td>
+	</tr>
+	
+		<tr>
+		<td><b>Kada najviše volite da zapalite cigaretu</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		a) <input type="checkbox" name="odgovor10" value="ucu"> Ujutru čim ustanem</br>
+		b) <input type="checkbox" name="odgovor10" value="pjela"> Posle jela</br>
+		c) <input type="checkbox" name="odgovor10" value="pojela"> Posle podne uz kafu</br>
+		d) <input type="checkbox" name="odgovor10" value="prjela"> Pre podne uz kafu</br>
+		e) <input type="checkbox" name="odgovor10" value="uznesto"> Uz nešto drugo</br>
+		f) <input type="checkbox" name="odgovor10" value="nevolim"> Ne volim</br>
+		<br/>	
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Da li poznajete nekog kome su cigarete nanele ozbiljne zdrastvene probleme?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		a) <input type="radio" name="odgovor11" value="ys"> Da </br>
+		b) <input type="radio" name="odgovor11" value="nn"> Ne </br>
+		c) <input type="radio" name="odgovor11" value="smth"> Nešto drugo </br>
+		<br/>	
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Koju marku cigareta pušite?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		 <input maxlength="20" type="text" id="tekstic" name="odgovor12" value="" required> 
+		 <br/>	
+		</td>
+	</tr>
+	
+	<tr>
+		<td><b>Da li smatrate da je uvođenje mera koje treba da smanje pušenje, vrsta kršenja ljudskih prava pušača?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		a) <input type="radio" name="odgovor13" value="yup">Da</br>
+		b) <input type="radio" name="odgovor13" value="nope">Ne</br>
+		c) <input type="radio" name="odgovor13" value="notsure">Nisam siguran/a</br>
+		<br/>			
+		</td>	
+	</tr>
+	
+	<tr>
+		<td><b>Zašto ste počeli da pušite?</b></td>
+	</tr>
+	
+	<tr>
+		<td>
+		 <textarea  maxlength="40" rows="3" cols="30" id="poruka"  name="odgovor14" value="textt" onfocus="this.value=''; setbg('#e5fff3');" 
+    oninvalid="invalidComment(this);" required></textarea>
+		 <br/>	 
+		</td>
+	</tr>
+	
+	<tr>	
+		<td>
+			<input type="submit" style="background-color:pink;"  class="submitt" value="Zavrsi anketu"/>
+		</td>
+    </tr>
+</table>
+<script>
+$(document).ready(function () 
+{
+
+function createCookie(name, value, days) 
+{
+  var expires;
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toGMTString();
+  }
+  else {
+    expires = "";
+  }
+  document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+} 
+ function Spoji1() //za checkboxove
+{
+  var favorite = [];
+            $.each($("input[name='odgovor4']:checked"), function(){
+                favorite.push($(this).val());
+            });
+	var spojen = favorite.join(", ");
+	return spojen;
+}
+
+ function Spoji2() //za checkboxove
+{
+  var favorite = [];
+            $.each($("input[name='odgovor9']:checked"), function(){
+                favorite.push($(this).val());
+            });
+	var spojen = favorite.join(", ");
+	return spojen;
+}
+
+
+ function Spoji3() //za checkboxove
+{
+  var favorite = [];
+            $.each($("input[name='odgovor10']:checked"), function(){
+                favorite.push($(this).val());
+            });
+	var spojen = favorite.join(", ");
+	return spojen;
+}
+
+ function Spoji4() //za checkboxove
+{
+  var favorite = [];
+            $.each($("input[name='odgovor11']:checked"), function(){
+                favorite.push($(this).val());
+            });
+	var spojen = favorite.join(", ");
+	return spojen;
+}
+
+ function Spoji5() //za checkboxove
+{
+  var favorite = [];
+            $.each($("input[name='odgovor13']:checked"), function(){
+                favorite.push($(this).val());
+            });
+	var spojen = favorite.join(", ");
+	return spojen;
+}
+
+$(".submitt").click(function() {
+
+ event.preventDefault();
+ var rates1 = document.getElementsByName('odgovor1');
+var odg1=null;
+for(var i = 0; i < rates1.length; i++){
+    if(rates1[i].checked){
+        odg1 = rates1[i].value;
+    }
+}
+ var rates2 = document.getElementsByName('odgovor2');
+var odg2=null;
+for(var i = 0; i < rates2.length; i++){
+    if(rates2[i].checked){
+        odg2 = rates2[i].value;
+    }
+}
+var rates3 = document.getElementsByName('odgovor3');
+var odg3=null;
+for(var i = 0; i < rates3.length; i++){
+    if(rates3[i].checked){
+        odg3 = rates3[i].value;
+    }
+}var rates5 = document.getElementsByName('odgovor5');
+var odg5=null;
+for(var i = 0; i < rates5.length; i++){
+    if(rates5[i].checked){
+        odg5 = rates5[i].value;
+    }
+}var rates6 = document.getElementsByName('odgovor6');
+var odg6=null;
+for(var i = 0; i < rates6.length; i++){
+    if(rates6[i].checked){
+        odg6 = rates6[i].value;
+    }
+}var rates7 = document.getElementsByName('odgovor7');
+var odg7=null;
+for(var i = 0; i < rates7.length; i++){
+    if(rates7[i].checked){
+        odg7 = rates7[i].value;
+    }
+}var rates8 = document.getElementsByName('odgovor8');
+var odg8=null;
+for(var i = 0; i < rates8.length; i++){
+    if(rates8[i].checked){
+        odg8 = rates8[i].value;
+    }
+}
+ if( document.getElementById("poruka").value=="value"){  
+        document.getElementById("poruka").required = true;
+		document.location.href = 'odgovori.php';
+      }
+      else{
+        document.getElementById("poruka").required = false;	
+      }  
+   }
+ var odg12= $.trim($("#tekstic").val());
+ var odg14= $.trim($("#poruka").val());
+ var odg4 = Spoji1();
+ var odg9 = Spoji2();
+ var odg10 = Spoji3();
+ var odg11 = Spoji4();
+ var odg13 = Spoji5();
+
+
+ if(odg1==null || odg2==null || odg3==null || odg4==null || odg5==null || odg6==null || odg7==null || odg8==null || odg9==null || odg10==null || odg11==null || odg12==null || odg13==null || odg14==null)
+ {
+  alert("Niste popunili anketu. Molim vas popunite!");
+ }
+else{
+ 
+
+  createCookie("odg1", odg1, "10");
+  createCookie("odg2", odg2, "10");
+  createCookie("odg3", odg3, "10");
+  createCookie("odg4", odg4, "10");
+  createCookie("odg5", odg5, "10");
+  createCookie("odg6", odg6, "10");
+  createCookie("odg7", odg7, "10");
+  createCookie("odg8", odg8, "10");
+  createCookie("odg9", odg9, "10");
+  createCookie("odg10", odg10, "10");
+  createCookie("odg11", odg11, "10");
+  createCookie("odg12", odg12, "10");
+  createCookie("odg13", odg13, "10");
+  createCookie("odg14", odg14, "10");
+  
+	document.location.href = 'odgovori.php';
+  
+  }
+ });
+ });
+
+</script>
+</form>
+</body>
+</html>
